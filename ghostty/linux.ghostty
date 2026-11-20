@@ -1,0 +1,10 @@
+# Linux-only settings (included from config.ghostty via platform.ghostty)
+font-size = 12
+
+# --- Keybinds (on top of defaults) ---
+# defaults worth knowing: ctrl+shift+t tab, ctrl+shift+o/e split right/down,
+# ctrl+alt+arrows move between splits, ctrl+shift+enter zoom split,
+# ctrl+, open config, ctrl+shift+, reload config, ctrl+shift+p command palette
+keybind = ctrl+shift+arrow_up=jump_to_prompt:-1
+keybind = ctrl+shift+arrow_down=jump_to_prompt:1
+keybind = ctrl+shift+equal=equalize_splits

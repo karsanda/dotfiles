@@ -1,0 +1,2 @@
+# Only non-default setting; see https://docs.atuin.sh/configuration/config/
+enter_accept = true

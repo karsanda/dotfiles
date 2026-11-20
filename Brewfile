@@ -1,0 +1,29 @@
+# brew bundle --file Brewfile   (install.sh --brew runs this)
+tap "derailed/k9s"
+
+brew "atuin"
+brew "bat"
+brew "btop"
+brew "derailed/k9s/k9s"
+brew "direnv"
+brew "eza"
+brew "fastfetch"
+brew "fd"
+brew "fzf"
+brew "git-delta"
+brew "glab"
+brew "lazygit"
+brew "mise"
+brew "neovim"
+brew "pup"
+brew "ripgrep"
+brew "starship"
+brew "tldr"
+brew "tmux"
+brew "tree-sitter-cli"
+brew "zoxide"
+
+if OS.mac?
+  cask "ghostty"
+  cask "font-cascadia-code"
+end

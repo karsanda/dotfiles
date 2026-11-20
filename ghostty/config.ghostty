@@ -1,0 +1,41 @@
+# --- Look ---
+theme = TokyoNight
+font-family = Cascadia Code
+# programming ligatures (=> != ===) and Cascadia's cursive italics
+font-feature = calt
+font-feature = ss01
+adjust-cell-height = 10%
+window-padding-x = 8
+window-padding-y = 6
+window-padding-balance = true
+# reopen windows/tabs/splits where you left them
+window-save-state = always
+window-inherit-working-directory = true
+cursor-style = block
+cursor-style-blink = false
+unfocused-split-opacity = 0.85
+minimum-contrast = 1.1
+
+# --- Behaviour ---
+# ~100 MB of scrollback (bytes)
+scrollback-limit = 100000000
+copy-on-select = clipboard
+# warn before pasting multi-line commands
+clipboard-paste-protection = true
+clipboard-trim-trailing-spaces = true
+mouse-hide-while-typing = true
+confirm-close-surface = false
+link-url = true
+# bell: keep the tab-title marker, but don't flag the window (no dock badge)
+bell-features = no-attention,title
+
+# zsh integration: jump between prompts, cwd in new tabs, sudo keeps terminfo,
+# and fix "unknown terminal xterm-ghostty" on SSH servers
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title,ssh-env,ssh-terminfo,path
+
+# --- Per-OS + per-machine overrides (loaded last, so they win) ---
+# platform.ghostty is a symlink to linux.ghostty or macos.ghostty, made by install.sh
+config-file = ?platform.ghostty
+# local.ghostty: untracked, for tweaks that only apply to one machine
+config-file = ?local.ghostty

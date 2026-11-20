@@ -1,0 +1,9 @@
+# macOS-only settings (included from config.ghostty via platform.ghostty)
+font-size = 14
+# let Option work as Alt/Meta in the shell (alt+b / alt+f word jumps, etc.)
+macos-option-as-alt = true
+
+# --- Keybinds ---
+# mac defaults already cover the Linux custom binds:
+# cmd+up/down jump_to_prompt, cmd+ctrl+equal equalize_splits,
+# cmd+t tab, cmd+d / cmd+shift+d split right/down, cmd+, open config
